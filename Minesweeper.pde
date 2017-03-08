@@ -41,7 +41,6 @@ public void reset(){
         setBombs();
 
     loss = false;
-    redraw();
 }
 
 public void setBombs()
@@ -60,7 +59,7 @@ public void draw ()
 {
     background( 0 );
 }
-public void mousePressed(){
+public void mouseClicked(){
     if(isWon() || loss)
         if( mouseX < 400 && mouseX > 200 && mouseY < 425 && mouseY > 375){
             reset();
