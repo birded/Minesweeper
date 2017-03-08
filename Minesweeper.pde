@@ -3,7 +3,7 @@
 import de.bezier.guido.*;
 public final static int NUM_ROWS = 20;
 public final static int NUM_COLS = 20;
-public final static int totalBombs = 30;
+public final static int totalBombs = 35;
 public boolean loss = false;
 private MSButton[][] buttons; //2d array of minesweeper buttons
 private ArrayList <MSButton> bombs = new ArrayList<MSButton>(); 
@@ -96,7 +96,7 @@ public void displayLosingMessage()
     textSize(72);
     text("You lose!",300,300);
     textSize(36);
-    text("Restart",300,390);
+    text("Restart",300,400);
     rectMode(CORNER);
 }
 public void displayWinningMessage()
@@ -108,7 +108,7 @@ public void displayWinningMessage()
     textSize(72);
     text("You win!",300,300);
     textSize(36);
-    text("Restart",300,390);
+    text("Restart",300,400);
     rectMode(CORNER);
 }
 
